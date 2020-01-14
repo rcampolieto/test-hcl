@@ -10,17 +10,17 @@ variable "ssh_public_key" {
 }
 
 variable "dns_prefix" {
-  default = "k8stest"
+  default = "campifoo.local"
 }
 
 variable cluster_name {
-  default = "k8stest"
+  default = "k8pytest"
 }
 
 variable resource_group_name {
-  default = "nic-k8stest"
+  default = "hcorppybuild01"
 }
 
 variable location {
-  default = "Central US"
+  default = "West US2"
 }
