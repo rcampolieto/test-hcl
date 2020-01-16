@@ -1,5 +1,5 @@
 variable "location" {
- default = "US West"
+ default = "central us"
  description = "The location where resources will be created"
 }
 
