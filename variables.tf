@@ -1,26 +1,13 @@
-variable "client_id" {}
-variable "client_secret" {}
-
-variable "agent_count" {
-  default = 3
+variable "application_port" {
+   description = "The port that you want to expose to the external load balancer"
+   default     = 80
 }
 
-variable "ssh_public_key" {
-  default = "~/.ssh/id_rsa.pub"
+variable "admin_user" {
+   description = "User name to use as the admin account on the VMs that will be part of the VM Scale Set"
+   default     = "azureuser"
 }
 
-variable "dns_prefix" {
-  default = "campifoo.local"
-}
-
-variable cluster_name {
-  default = "k8pytest"
-}
-
-variable resource_group_name {
-  default = "hcorppybuild01"
-}
-
-variable location {
-  default = "West US2"
+variable "admin_password" {
+   description = "Default password for admin account"
 }
